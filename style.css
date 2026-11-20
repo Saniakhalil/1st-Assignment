@@ -1,0 +1,138 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+  
+ 
+}
+form{
+    display: flex;
+    align-items: center;
+   
+    
+}
+section#home
+{
+    text-align: center;
+    padding: 10%;
+}
+section#products
+{
+    text-align: center;
+}
+
+footer 
+{
+    text-align: center;
+}
+
+
+/* PRODUCT SECTION */
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* PRODUCT HEADING */
+#products h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* PRODUCT CARDS */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* PRODUCT IMAGES */
+.product-card img {
+    width: 200px;
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* ADD TO CART BUTTON */
+.product-card button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+}
+section#about
+{
+text-align: center;
+}
+
+section#contact
+{
+    text-align: center;
+}
+/* CONTACT SECTION */
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+/* CONTACT HEADING */
+#contact h2 {
+    margin-bottom: 25px;
+}
+
+/* CONTACT FORM */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* LABELS */
+#contact label {
+    font-weight: bold;
+}
+
+/* INPUT FIELDS */
+#contact input,
+#contact textarea {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* MESSAGE BUTTON */
+#contact button {
+    background-color: green;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
